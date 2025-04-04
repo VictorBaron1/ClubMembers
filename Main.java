@@ -16,5 +16,10 @@ public class Main
             new MemberInfo("Xin, Michael", 2017, false),
             new MemberInfo("Garcia, Maria", 2020, true)
         };
+        ArrayList<MemberInfo> memberList = new ArrayList();
+        for (MemberInfo m: roster ) memberList.add(m);
+        j.setMemberList(memberList);
+        System.out.println(j.removeMembers(2018));
+        System.out.println(j.getMemberList());
     }
 }
